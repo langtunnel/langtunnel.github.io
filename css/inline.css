@@ -1,0 +1,147 @@
+* {
+  outline: none;
+  margin: 0;
+}
+body {
+  height: 100%;
+  line-height: 1em;
+  background-color: #F5F5F5;
+}
+body * {
+  font-family: "Times New Roman", Times, serif !important;
+}
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+body header#menu {
+  height: 16px;
+}
+body header#menu button {
+  float: right;
+  padding: 1px 7px;
+  line-height: 12px;
+}
+body main {
+  display: flex;
+  width: 100%;
+}
+body main div#left {
+  width: 60%;
+}
+body main div#left pre#sentence-area {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 4px;
+  height: 55vh;
+  overflow-y: auto;
+}
+body main div#left pre#sentence-area * {
+  white-space: pre-wrap;
+}
+body main div#left pre#sentence-area .sentence-search-op hr {
+  margin: 5px 0;
+  height: 2px;
+  background-color: #6e6e6e;
+  border: 0;
+}
+body main div#left pre#sentence-area .sentence-search-op .sentence-searched {
+  color: #ff8592;
+  margin: 0 0 5px;
+  font-size: 1em;
+}
+body main div#left pre#sentence-area .sentence-search-op .combination {
+  margin: 0 0 5px;
+}
+body main div#left pre#sentence-area .sentence-search-op .combination .en {
+  line-height: 1em;
+}
+body main div#left pre#sentence-area .sentence-search-op .combination .cn {
+  font-size: 12px;
+  line-height: 1.1em;
+  color: dimgray;
+}
+body main div#left pre#sentence-area .sentence-search-op .combination .cn em {
+  background-color: yellow;
+  font-style: normal;
+}
+body main div#left div#css-wrapper {
+  line-height: 0;
+}
+body main div#left div#css-wrapper textarea#input-area {
+  height: 25vh;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 1em;
+}
+body main div#left div#css-wrapper div#word-area {
+  padding: 0 0 0 4px;
+  min-height: calc(20vh - 16px);
+  background-color: #FFDC00;
+}
+body main div#left div#css-wrapper div#word-area * {
+  white-space: pre-wrap;
+}
+body main div#left div#css-wrapper div#word-area #explanations {
+  width: 100%;
+  overflow-y: auto;
+  line-height: 1.2em;
+}
+body main div#left div#css-wrapper div#word-area #explanations .combination * {
+  display: inline;
+}
+body main div#left div#css-wrapper div#word-area #explanations .combination .en {
+  font-weight: bold;
+  color: red;
+  margin-right: 4px;
+}
+body main div#right {
+  flex-grow: 1;
+  height: calc(100vh - 16px);
+  font-size: 0;
+}
+body main div#right textarea#writing-area {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+body main div#right textarea#writing-area:focus {
+  border: 1px solid #737373;
+}
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #F90;
+}
+@media only screen and (max-width: 480px) {
+  div#left {
+    width: 100% !important;
+  }
+  div#right {
+    display: none;
+  }
+  div#word-area {
+    overflow-y: auto;
+  }
+}
+@media only screen and (min-width: 481px) {
+  div#css-wrapper {
+    height: calc(45vh - 16px);
+  }
+  div#word-area {
+    height: calc(20vh - 16px);
+    overflow-y: auto;
+  }
+}
+/*# sourceMappingURL=inline.css.map */
