@@ -72,7 +72,6 @@ body main div#left div#css-wrapper textarea#input-area {
   width: 100%;
   box-sizing: border-box;
   border: none;
-  font-size: 1em;
 }
 body main div#left div#css-wrapper div#word-area {
   padding: 0 0 0 4px;
@@ -99,14 +98,19 @@ body main div#right {
   flex-grow: 1;
   height: calc(100vh - 16px);
   font-size: 0;
+  box-sizing: border-box;
+  padding: 2px 4px 4px;
 }
 body main div#right textarea#writing-area {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
 }
 body main div#right textarea#writing-area:focus {
-  border: 1px solid #737373;
+  border: none;
 }
 .highlight {
   background-color: yellow;
