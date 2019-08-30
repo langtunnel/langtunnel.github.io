@@ -3,39 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>LangTunnel</title>
-  
-  <link rel="shortcut icon" href=/static/favicon.ico>
-  <link rel="stylesheet" href=/static/css/inline.css>
+  <link rel="shortcut icon" href=/favicon.ico>
+  <style>
+    #full-iframe {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
 </head>
 <body>
-<header id="menu">
-  <button type="button" id="setting">设置</button>
-  <button type="button" id="sign-in">登录</button>
-  <button type="button" id="prod-env">PROD</button>
-</header>
 
-<main>
-  <div id="left">
-    <pre id="sentence-area"></pre>
+<iframe id="full-iframe" src="http://47.96.167.50/inline/" frameborder="0"></iframe>
 
-    <div id="css-wrapper">
-      <textarea name="" id="input-area" cols="30" rows="10" placeholder="在此输入查询" autofocus></textarea>
-
-      <div id="word-area">
-        <pre id="explanations"></pre>
-      </div>
-    </div>
-  </div>
-
-  <div id="right">
-    <label for="writing-area"></label><textarea name="" id="writing-area" cols="30" rows="10"
-                                                placeholder="书写区  [Tab键与左侧查询框快捷切换]"></textarea>
-  </div>
-</main>
-
-<script src=/static/common/js/lib/jquery-3.3.1.min.js></script>
-<script src=/static/common/js/utils.js></script>
-<script src=/static/js/actions.js></script>
-<script src=/static/js/inline.js></script>
 </body>
 </html>
