@@ -10,7 +10,7 @@ function postAjaxRequestServer(url, dataJson, successCallback = () => {
   showMessage('dataJson-->', 'info', true);
   showMessage(dataJson, 'info', true);
   $.ajax({
-    url: url,
+    url: 'http://47.96.167.50'+url,
     type: "post",
     datatype: "application/json",
     data: dataJson,
