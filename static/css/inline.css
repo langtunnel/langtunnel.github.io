@@ -1,0 +1,215 @@
+* {
+  outline: none;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  line-height: 0;
+  background-color: #F5F5F5;
+}
+body * {
+  font-family: "IBM Plex Mono ExtraLight", "Segoe UI", "Helvetica Neue", Helvetica, Roboto, 'Open Sans', FreeSans, sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+body header#menu {
+  height: 16px;
+  color: white;
+  background-color: #2b2b2b;
+}
+body header#menu button {
+  float: right;
+  padding: 1px 7px;
+  line-height: 12px;
+}
+body main {
+  display: flex;
+  width: 100%;
+  line-height: 0;
+}
+body main div#left {
+  width: 60%;
+  min-width: 60%;
+  line-height: 1em;
+}
+body main div#left pre#sentence-area {
+  width: 100%;
+  padding: 0 4px;
+  height: 55vh;
+  overflow-y: auto;
+}
+body main div#left pre#sentence-area * {
+  white-space: pre-wrap;
+}
+body main div#left pre#sentence-area .sentence-search-op hr {
+  margin: 5px 0;
+  height: 2px;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+body main div#left pre#sentence-area .sentence-search-op .sentence-searched {
+  color: #ff8592;
+  margin: 0 0 5px;
+  font-size: 1em;
+}
+body main div#left pre#sentence-area .sentence-search-op .combination {
+  margin: 0 0 5px;
+}
+body main div#left pre#sentence-area .sentence-search-op .combination .en {
+  font-style: italic;
+  line-height: 1.1em;
+}
+body main div#left pre#sentence-area .sentence-search-op .combination .en img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body main div#left pre#sentence-area .sentence-search-op .combination .cn {
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 1.1em;
+  color: dimgray;
+}
+body main div#left pre#sentence-area .sentence-search-op .combination .cn em {
+  background-color: yellow;
+  font-style: normal;
+}
+body main div#left div#css-wrapper {
+  line-height: 0;
+}
+body main div#left div#css-wrapper textarea#searching-area {
+  height: 22vh;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  box-shadow: 0 0 3px rgba(26, 26, 26, 0.1);
+}
+body main div#left div#css-wrapper div#word-area {
+  padding: 4px;
+  min-height: calc(23vh - 16px);
+}
+body main div#left div#css-wrapper div#word-area * {
+  white-space: pre-wrap;
+}
+body main div#left div#css-wrapper div#word-area #explanations {
+  width: 100%;
+  overflow-y: auto;
+  line-height: 1em;
+}
+body main div#left div#css-wrapper div#word-area #explanations .combination * {
+  display: inline;
+  font-size: 14px;
+}
+body main div#left div#css-wrapper div#word-area #explanations .combination .en {
+  font-weight: bold;
+  color: red;
+  margin-right: 1ch;
+}
+body main div#right {
+  flex-grow: 1;
+  height: calc(100vh - 16px);
+  font-size: 0;
+  padding: 2px;
+}
+body main div#right textarea#writing-area {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  background-image: url("/static/img/writting-back.jpg");
+  background-size: 50%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+body main div#right textarea#writing-area:focus {
+  border: none;
+}
+body main blockquote {
+  position: absolute;
+  bottom: 35vh;
+  right: 13vw;
+  min-width: 100px;
+  max-width: 200px;
+  padding: 8px 8px 4px;
+  margin: 0;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgba(26, 26, 26, 0.42);
+  font: italic 12px / 1.3 'Lora', serif;
+}
+body main blockquote:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 25px;
+  border-width: 20px 0 0 20px;
+  border-style: solid;
+  border-color: yellow transparent;
+}
+body main blockquote p {
+  margin: 0;
+  padding: 0;
+}
+body main blockquote a#got-it {
+  float: right;
+  margin-top: 4px;
+  text-decoration: underline;
+  color: lightskyblue;
+}
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #F90;
+}
+@media only screen and (max-width: 480px) {
+  div#left {
+    width: 100% !important;
+  }
+  div#left textarea#searching-area {
+    font-size: 14px !important;
+  }
+  div#left div#word-area {
+    overflow-y: auto;
+    background-image: url("/static/img/searching-back1-gray.jpg");
+    background-size: auto 60%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+  div#right {
+    display: none;
+  }
+}
+@media only screen and (min-width: 481px) {
+  body {
+    background-image: url("/static/img/inline-back1.png");
+    background-size: cover;
+  }
+  body div#css-wrapper {
+    height: calc(45vh - 16px);
+  }
+  body div#css-wrapper div#word-area {
+    height: calc(20vh - 16px);
+    overflow-y: auto;
+  }
+}
+/*# sourceMappingURL=inline.css.map */
